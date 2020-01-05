@@ -1,0 +1,231 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  /* background-color: #000000; */
+  font-family: "Lato", sans-serif;
+  color: #ffffff;
+}
+
+.container {
+  width: 1115px;
+  margin: 0 auto;
+}
+
+.visually-hidden {
+  display: none;
+}
+
+.slider-screen {
+  background-image: url(../images/bg_screen1.jpg);
+  height: 980px;
+}
+
+.site-header {
+  padding-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 245px;
+}
+
+.site-navigation__list {
+  list-style: none;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.site-navigation__list__item {
+  margin-right: 60px;
+}
+
+.site-navigation__list__item a {
+  text-decoration: none;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.socials {
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.socials__item:not(:last-child) {
+  margin-right: 20px;
+}
+
+.socials__item a {
+  display: block;
+  width: 27px;
+  height: 22px;
+}
+
+.socials__item-fb {
+  background: url(../images/icons/icon_fb.png) center no-repeat;
+}
+
+.socials__item-twit {
+  background: url(../images/icons/icon_twit.png) center no-repeat;
+}
+
+.socials__item-youtube {
+  background: url(../images/icons/icon_youtube.png) center no-repeat;
+}
+
+.socials__item-inst {
+  background: url(../images/icons/icon_inst.png) center no-repeat;
+}
+
+.slider-wrap {
+  width: 360px;
+}
+
+.slider__description {
+  font-size: 28px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.slider__headline {
+  font-size: 80px;
+  font-weight: 900;
+  line-height: 70px;
+  text-transform: uppercase;
+  background: linear-gradient(45deg, #aa3a67 40%, #fb806b);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin: 20px 0px;
+}
+
+.slider__btn {
+  font-size: 24px;
+  font-weight: 700;
+  text-transform: uppercase;
+  background-color: rgba(0, 0, 0, 0);
+  border-radius: 3px;
+  border: 4px solid;
+  border-image: linear-gradient(45deg, #aa3a67 40%, #fb806b);
+  border-image-slice: 1;
+  padding: 26px 65px;
+  cursor: pointer;
+  outline: none;
+  margin-top: 65px;
+}
+
+.section-headline {
+  text-align: center;
+  font-size: 38px;
+  font-weight: 900;
+  text-transform: uppercase;
+  padding: 60px 0px;
+}
+
+.default-btn {
+  font-size: 24px;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 20px 66px;
+  background-color: rgba(0, 0, 0, 0);
+  border-radius: 3px;
+  border: 4px solid;
+}
+
+.propositions {
+  background-color: #000000;
+}
+
+.propositions__list {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+.propositions__list__item {
+  display: block;
+  width: 350px;
+  height: 580px;
+  border-radius: 3px;
+  padding: 30px 20px;
+  text-align: center;
+}
+
+.proposition-1 {
+  background: url(../images/photo1.png) center no-repeat;
+  margin-right: 30px;
+}
+
+.proposition-2 {
+  background: url(../images/photo2.png) center no-repeat;
+}
+
+.propositions__list__item__headline {
+  font-size: 30px;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin-bottom: 215px;
+}
+
+.propositions__list__item__price {
+    margin-bottom: 40px;
+}
+
+.propositions__list__item__price-small {
+    font-size: 30px;
+    font-weight: 400;
+    vertical-align: top;
+    line-height: 1;
+}
+
+.propositions__list__item__price-big {
+    font-size: 60px;
+    font-weight: 700;
+    vertical-align: top;
+    line-height: 50px;
+}
+
+.propositions__list__item__btn {
+    margin-bottom: 30px;
+}
+
+.propositions__list__item__description {
+    font-size: 16px;
+    font-weight: 400;
+    padding-left: 20px;
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.propositions__list__item__description::before {
+    content: '';
+position: absolute;
+left: 50px;
+width: 17px;
+height: 18px;
+background: url(../images/icons/icon_hum.png) center no-repeat;
+}
+
+.propositions__list__item__text {
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.propositions__descr {
+    padding: 60px 0px;
+    font-size: 22px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.tajectory {
+  background-image: url(../images/bg_screen2.jpg);
+  height: 980px;
+}
+
+.gallery {
+  background-color: #000000;
+}
+
+.map {
+  background-image: url(../images/map.jpg);
+  height: 980px;
+}
