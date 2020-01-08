@@ -352,6 +352,6 @@
     display: none;
   }
 
-  p {
+  p, ul {
     margin: 0;
   }
