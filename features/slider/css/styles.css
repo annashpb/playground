@@ -1,36 +1,129 @@
 html {
-    box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+body {
+  background-color: rgb(255, 249, 235);
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.slider {
+  width: 100%;
+  height: 760px;
+  position: relative;
+  margin-top: 60px;
+}
+
+.slider-buttons {
+    width: 1200px;
+  height: inherit;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.control-btn {
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  border: none;
+  outline: none;
+  background-color: rgb(255, 249, 235);
+  font-size: 26px;
+  color: rgb(101, 90, 255);
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: all 200ms linear;
+}
+
+.prev-btn {
+  left: 0;  
+}
+
+.next-btn {
+right: 0;
+}
+
+.control-btn:hover, .control-btn:focus {
+box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.8);
+}
+
+.sliders {
+   list-style: none;
+   margin: 0;
+   padding: 0;
+}
+
+.sliders-item {
+    position: relative;
+}
+
+.slider-item-text {
+    position: absolute;
+    left: 25%;
+    top: 50%;
+    transform: translateY(-50%);
+    max-width: 500px;
+}
+
+.sliders-item img {
+    height: 760px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.sliders-item-headline {
+    font-family: 'Monda', sans-serif;
+    font-weight: 700;
+    font-size: 50px;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+
+.sliders-item-description {
+    font-family: 'Monda', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    color: #ffffff;
+}
+
+.slider-pagination-active {
+  background-color: rgb(101, 90, 255);
+}
+
+.slider-pagination {
+    text-align: center;
+    padding: 20px 0px;
+}
+
+.slider-pagination-item {
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    border: 2px solid rgba(101, 90, 255, 0.6);
   }
   
-  *,
-  *::before,
-  *::after {
-    box-sizing: inherit;
-  }
-
-  img {
-      display: block;
-      width: 100%;
-      height: auto;
-  }
-
-  body {
-      background-color: rgb(255, 249, 235);
-  }
-
-  .slider {
-      width: 100%;
-      height: 610px;
-  }
-
-  .slider-pagination span {
-      display: block;
-      width: 14px;
-height: 14px;
-border-radius: 50%;
-border: 2px solid rgba(101, 90, 255, 0.6);
-  }
-
-  .slider-pagination-active {
-      background-color: rgb(101, 90, 255);
+  .slider-pagination-item:not(:last-child) {
+      margin-right: 10px;
   }

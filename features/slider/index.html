@@ -5,17 +5,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Slider</title>
+    <link href="https://fonts.googleapis.com/css?family=Monda:400,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
     <div class="slider">
-        <button class="control-btn prev-btn" type="button"><span>Previous</span></button>
-        <button class="control-btn next-btn" type="button"><span>Next</span></button>
+        <div class="slider-buttons container">
+            <button class="control-btn prev-btn" type="button"><span>&#10096&#10096</span></button>
+            <button class="control-btn next-btn" type="button"><span>&#10097&#10097</span></button>
+        </div>   
+        <ul class="sliders">
+            <li class="sliders-item">
+                <img src="./img/slider_background1.jpg" alt="Slider image" width="1920" height="760">
+               <div class="slider-item-text">
+                <h3 class="sliders-item-headline">Hello slider!</h3>
+                <p class="sliders-item-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Exercitationem sapiente eligendi rem impedit eos repellendus corrupti nisi, quo sequi, quas quod, eius fuga aut molestiae voluptatum consequuntur voluptatem voluptates sunt?</p>
+            
+            </div></li>
+            <li class="sliders-item">
+                <img src="./img/slider_background2.jpg" alt="Slider image" width="1920" height="760">
+              <div class="slider-item-text">
+                <h3 class="sliders-item-headline">Hello slider!</h3>
+                <p class="sliders-item-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Exercitationem sapiente eligendi rem impedit eos repellendus corrupti nisi, quo sequi, quas quod, eius fuga aut molestiae voluptatum consequuntur voluptatem voluptates sunt?</p>
+            </div></li>
+            <li class="sliders-item">
+                <img src="./img/slider_background3.jpg" alt="Slider image" width="1920" height="760">
+              <div class="slider-item-text">
+                <h3 class="sliders-item-headline">Hello slider!</h3>
+                <p class="sliders-item-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Exercitationem sapiente eligendi rem impedit eos repellendus corrupti nisi, quo sequi, quas quod, eius fuga aut molestiae voluptatum consequuntur voluptatem voluptates sunt?</p>
+            </div></li>
+        </ul>
+        
         <div class="slider-pagination">
-            <span></span>
-            <span class="slider-pagination-active"></span>
-            <span></span>
+            <span class="slider-pagination-item"></span>
+            <span class="slider-pagination-item slider-pagination-active"></span>
+            <span class="slider-pagination-item"></span>
         </div>
     </div>
 </body>
