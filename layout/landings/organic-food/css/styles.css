@@ -72,17 +72,40 @@
       url("../fonts/open-sans-v17-latin-regular.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
-* {
-  margin: 0;
-  padding: 0;
+html {
+  font-size: 14px;
   box-sizing: border-box;
 }
 
-html {
-    font-size: 10px;
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 .container {
-    width: 117em;
-    margin: 0 auto;
+  max-width: 73.125rem;
+  margin: 0 auto;
+}
+
+.logo {
+  display: inline-block;
+  width: 100px;
+  height: 130px;
+  font-family: "Lato";
+  font-weight: 700;
+  color: #4f4a37;
+  padding-bottom: 28px;
+  text-transform: uppercase;
+  background-color: #fcdb5a;
+  background: url(../images/icons/logo.png) center no-repeat;
+  margin-right: 70px;
 }
