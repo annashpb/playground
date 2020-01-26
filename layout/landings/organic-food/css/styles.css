@@ -110,6 +110,21 @@ img {
   background-color: #ffffff;
 }
 
+.section-headline {
+  font-family: "Raleway";
+  font-weight: 200;
+  text-transform: uppercase;
+  font-size: 40px;
+  line-height: 50px;
+  color: #333333;
+}
+
+.section-headline-bold {
+  font-weight: 900;
+}
+
+/* HEADER */
+
 .site-header {
   position: absolute;
   top: 0;
@@ -176,17 +191,102 @@ img {
   position: absolute;
 }
 
+
+
+/* SCREEN 1 SLIDER */
+
+
 .slider-screen {
   background: url(../images/bg_screen1.png) no-repeat;
   background-size: cover;
 }
 
 .site-headline {
+  padding-top: 300px;
+  padding-bottom: 185px;
+}
+
+.site-headline span {
+  display: block;
+  width: 50%;
   font-family: "Ma Shan Zheng";
   font-weight: 400;
   font-size: 200px;
   color: #ffffff;
-  width: 50%;
-  padding-top: 300px;
-  padding-bottom: 185px;
+}
+
+.products {
+  width: 1380px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+
+.products-aside {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+.products-aside-line {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.product {
+  position: relative;
+}
+
+.product-name {
+  font-family: "Raleway";
+  font-weight: 200;
+  text-transform: uppercase;
+  font-size: 30px;
+  line-height: 30px;
+  color: #ffffff;
+  position: absolute;
+  left: 30px;
+  bottom: 30px;
+}
+
+.product-name-bold {
+  font-weight: 900;
+}
+
+.products-section-headline {
+  color: #fcdb5a;
+}
+
+.product--sweets {
+  width: -webkit-fill-available;
+  height: 679px;
+  background-image: url(../images/photo1.jpg);
+}
+
+.product--organic {
+  width: 500px;
+  height: 310px;
+  background-image: url(../images/photo2.jpg);
+}
+
+.product--meat {
+  width: 500px;
+  height: 310px;
+  background-image: url(../images/photo3.jpg);
+}
+
+.product--fruits {
+  width: 616px;
+  height: 369px;
+  background-image: url(../images/photo4.jpg);
+}
+
+.head-product {
+  width: 384px;
+  height: 369px;
+}
+
+.products-section-headline {
+  padding-top: 90px;
+  padding-left: 90px;
 }
