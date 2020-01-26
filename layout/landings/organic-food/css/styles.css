@@ -92,20 +92,101 @@ img {
 }
 
 .container {
-  max-width: 73.125rem;
+  width: 1170px;
   margin: 0 auto;
 }
 
+.default-btn {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  color: #1b1b1b;
+  text-transform: uppercase;
+  line-height: 20px;
+  padding: 14px 36px;
+  border: none;
+  border-radius: 22px;
+  background-color: #ffffff;
+}
+
+.site-header {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0));
+}
+
+.site-header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 1170px;
+}
+
+.navigation {
+  display: flex;
+  justify-content: flex-start;
+}
+
 .logo {
-  display: inline-block;
+  display: block;
   width: 100px;
   height: 130px;
   font-family: "Lato";
   font-weight: 700;
+  font-size: 20px;
   color: #4f4a37;
-  padding-bottom: 28px;
+  padding-top: 85px;
+  text-align: center;
   text-transform: uppercase;
+  text-decoration: none;
+  background: url(../images/icons/logo.png) 50% 20% no-repeat;
   background-color: #fcdb5a;
-  background: url(../images/icons/logo.png) center no-repeat;
   margin-right: 70px;
+}
+
+.navigation__list {
+  display: flex;
+  align-items: center;
+}
+
+.navigation__list__item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.navigation__list__item__link {
+  text-decoration: none;
+  font-family: "Open Sans";
+  font-weight: 400;
+  color: #ffffff;
+  position: relative;
+}
+
+.navigation__list__item__link:hover::after,
+.navigation__list__item__link:focus::after {
+  content: "";
+  display: block;
+  background-color: #fcdb5a;
+  height: 2px;
+  width: -webkit-fill-available;
+  margin-top: 36px;
+  position: absolute;
+}
+
+.slider-screen {
+  background: url(../images/bg_screen1.png) no-repeat;
+  background-size: cover;
+}
+
+.site-headline {
+  font-family: "Ma Shan Zheng";
+  font-weight: 400;
+  font-size: 200px;
+  color: #ffffff;
+  width: 50%;
+  padding-top: 300px;
+  padding-bottom: 185px;
 }
