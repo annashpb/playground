@@ -106,7 +106,7 @@ img {
   line-height: 20px;
   padding: 14px 36px;
   border: none;
-  border-radius: 22px;
+  border-radius: 25px;
   background-color: #ffffff;
 }
 
@@ -421,4 +421,71 @@ img {
 
 .services__list__item:nth-child(6)::before {
   background: url(../images/icons/icon_services_vegetables.png) center no-repeat;
+}
+
+/* SCREEN 3 BENEFITS SECTION */
+
+.benefits {
+  background: url(../images/bg_screen3.jpg) top no-repeat;
+  background-color: #f9f9f9;
+  background-size: contain;
+  padding-top: 145px;
+  padding-bottom: 136px;
+}
+
+.benefits__headline {
+  color: #ffffff;
+  text-align: left;
+  width: 300px;
+  padding-bottom: 30px;
+}
+
+.benefits__description {
+  font-family: "Open Sans";
+  font-weight: 400;
+  color: #c5c5c5;
+  line-height: 23px;
+  width: 570px;
+  padding-bottom: 45px;
+}
+
+.benefits__btn {
+  background-color: #fcdb5a;
+  margin-bottom: 110px;
+}
+
+.benefits__list {
+  display: flex;
+}
+
+.benefits__list__item {
+  width: 292px;
+  display: flex;
+  flex-direction: column;
+}
+
+.benefits__list__item:nth-child(2n) {
+  flex-direction: column-reverse;
+}
+
+.benefits__list__item__descr {
+  height: 221px;
+  background-color: #ffffff;
+  padding: 50px 30px 40px 40px;
+}
+
+.benefits__list__item__descr__headline {
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 23px;
+  padding-bottom: 26px;
+}
+
+.benefits__list__item__descr__text {
+  font-family: "Open Sans";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 23px;
+  color: #666666;
 }
