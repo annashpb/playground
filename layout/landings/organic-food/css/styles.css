@@ -489,3 +489,32 @@ img {
   line-height: 23px;
   color: #666666;
 }
+
+/* SCREEN 4 TASTY SECTION */
+
+.tasty {
+  background: url(../images/bg_screen4.png) right top no-repeat;
+  background-size: contain;
+  background-color: #f9f9f9;
+  padding-top: 100px;
+  padding-bottom: 120px;
+  position: relative;
+}
+
+.tasty::before {
+  content: '';
+  position: absolute;
+  top: 40px;
+  left: 65%;
+  width: 195px;
+  height: 198px;
+  background: url(../images/mark.png) center no-repeat;
+}
+
+.tasty__text {
+  font-family: "Ma Shan Zheng";
+  font-weight: 400;
+  font-size: 230px;
+  color: #ccaf8a;
+  width: 470px;
+}
