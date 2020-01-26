@@ -117,6 +117,7 @@ img {
   font-size: 40px;
   line-height: 50px;
   color: #333333;
+  text-align: center;
 }
 
 .section-headline-bold {
@@ -191,14 +192,12 @@ img {
   position: absolute;
 }
 
-
-
 /* SCREEN 1 SLIDER */
-
 
 .slider-screen {
   background: url(../images/bg_screen1.png) no-repeat;
   background-size: cover;
+  padding-bottom: 100px;
 }
 
 .site-headline {
@@ -255,6 +254,7 @@ img {
 
 .products-section-headline {
   color: #fcdb5a;
+  text-align: left;
 }
 
 .product--sweets {
@@ -289,4 +289,62 @@ img {
 .products-section-headline {
   padding-top: 90px;
   padding-left: 90px;
+}
+
+/* SCREEN 2 SLOGAN SECTION */
+
+.slogan {
+  padding-top: 80px;
+}
+
+.slogan-bg {
+  width: 719px;
+  height: 492px;
+  background: url(../images/photo5.jpg) no-repeat;
+  background-size: contain;
+  position: relative;
+}
+
+.slogan-bg::after {
+  content: "";
+  width: 329px;
+  height: 492px;
+  background: url(../images/photo6.jpg) no-repeat;
+  background-size: contain;
+  position: absolute;
+  left: 430px;
+  top: -38px;
+  z-index: 1;
+}
+
+.slogan-text {
+  font-family: "Ma Shan Zheng";
+  font-weight: 400;
+  font-size: 100px;
+  line-height: 100px;
+  width: 520px;
+  position: absolute;
+  left: 655px;
+  top: 20px;
+  z-index: 2;
+}
+
+.slogan-text-yellow {
+  color: #fcdb5a;
+}
+
+.slogan-text-pink {
+  color: #db2985;
+}
+
+.slogan-text-green {
+  color: #72aa41;
+}
+
+.slogan-text-orange {
+  color: #f2a137;
+}
+
+.slogan-text-blue {
+  color: #4fb1c9;
 }
