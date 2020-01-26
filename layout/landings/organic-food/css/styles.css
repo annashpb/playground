@@ -279,25 +279,25 @@ img {
 .product--sweets {
   width: -webkit-fill-available;
   height: 679px;
-  background-image: url(../images/photo1.jpg);
+  background-image: linear-gradient(to top, rgba(0,0,0,0.7), rgba(0,0,0,0) 20%), url(../images/photo1.jpg);
 }
 
 .product--organic {
   width: 500px;
   height: 310px;
-  background-image: url(../images/photo2.jpg);
+  background-image: linear-gradient(to top, rgba(0,0,0,0.7), rgba(0,0,0,0) 50%), url(../images/photo2.jpg);
 }
 
 .product--meat {
   width: 500px;
   height: 310px;
-  background-image: url(../images/photo3.jpg);
+  background-image: linear-gradient(to top, rgba(0,0,0,0.7), rgba(0,0,0,0) 50%), url(../images/photo3.jpg);
 }
 
 .product--fruits {
   width: 616px;
   height: 369px;
-  background-image: url(../images/photo4.jpg);
+  background-image: linear-gradient(to top, rgba(0,0,0,0.7), rgba(0,0,0,0) 50%), url(../images/photo4.jpg);
 }
 
 .head-product {
