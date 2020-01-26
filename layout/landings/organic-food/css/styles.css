@@ -124,6 +124,18 @@ img {
   font-weight: 900;
 }
 
+.section-description {
+  font-family: "Open Sans";
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 25px;
+  color: #b3b3b3;
+  text-align: center;
+  width: 570px;
+  margin: 0 auto;
+  margin-bottom: 60px;
+}
+
 /* HEADER */
 
 .site-header {
@@ -181,8 +193,8 @@ img {
   position: relative;
 }
 
-.navigation__list__item__link:hover::after,
-.navigation__list__item__link:focus::after {
+.navigation__list__item__link::after,
+.navigation__list__item__link::after {
   content: "";
   display: block;
   background-color: #fcdb5a;
@@ -190,6 +202,13 @@ img {
   width: -webkit-fill-available;
   margin-top: 36px;
   position: absolute;
+  opacity: 0;
+  transition: opacity 200ms linear;
+}
+
+.navigation__list__item__link:hover::after,
+.navigation__list__item__link:focus::after {
+  opacity: 1;
 }
 
 /* SCREEN 1 SLIDER */
@@ -347,4 +366,59 @@ img {
 
 .slogan-text-blue {
   color: #4fb1c9;
+}
+
+/* SCREEN 3 SERVICES SECTION */
+
+.services {
+  padding-top: 160px;
+  padding-bottom: 140px;
+}
+
+.services__list {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+}
+
+.services__list__item {
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 16px;
+  color: #333333;
+  padding-top: 120px;
+  position: relative;
+}
+
+.services__list__item::before {
+  content: "";
+  display: block;
+  height: 120px;
+  width: -webkit-fill-available;
+  position: absolute;
+  top: 0;
+}
+
+.services__list__item:nth-child(1)::before {
+  background: url(../images/icons/icon_services_steak.png) center no-repeat;
+}
+
+.services__list__item:nth-child(2)::before {
+  background: url(../images/icons/icon_services_cereals.png) center no-repeat;
+}
+
+.services__list__item:nth-child(3)::before {
+  background: url(../images/icons/icon_services_pizza.png) center no-repeat;
+}
+
+.services__list__item:nth-child(4)::before {
+  background: url(../images/icons/icon_services_burger.png) center no-repeat;
+}
+
+.services__list__item:nth-child(5)::before {
+  background: url(../images/icons/icon_services_cupcake.png) center no-repeat;
+}
+
+.services__list__item:nth-child(6)::before {
+  background: url(../images/icons/icon_services_vegetables.png) center no-repeat;
 }
