@@ -817,3 +817,13 @@ img {
   font-size: 18px;
   color: #ffffff;
 }
+
+.marks {
+  padding-bottom: 130px;
+}
+
+.marks__list {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
