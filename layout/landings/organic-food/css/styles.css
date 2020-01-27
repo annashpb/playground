@@ -129,6 +129,7 @@ img {
   line-height: 50px;
   color: #333333;
   text-align: center;
+  margin-bottom: 20px;
 }
 
 .section-headline-bold {
@@ -656,6 +657,10 @@ img {
   padding: 150px 0px 200px 0px;
 }
 
+.reviews__headline {
+  color: #ffffff;
+}
+
 .reviews__list {
   list-style: none;
 }
@@ -733,4 +738,82 @@ img {
 
 .reviews__photo__pagination:not(:last-child) {
   margin-right: 15px;
+}
+
+/* SCREEN 8 BLOG CONTAINER */
+
+.blog {
+  padding: 140px 0px 120px 0px;
+}
+
+.blog__list {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+.blog__list__item {
+  position: relative;
+}
+
+.blog__list__item::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.45);
+  z-index: 1;
+}
+
+.blog__list__item__date {
+  display: inline-block;
+  padding: 15px;
+  background-color: #fde557;
+  text-align: center;
+  position: absolute;
+  top: 0;
+  left: 25px;
+  z-index: 2;
+}
+
+.blog__list__item__date-num {
+  font-family: "Raleway";
+  font-weight: 900;
+  font-size: 25px;
+  line-height: 1.2;
+  color: #333333;
+}
+
+.blog__list__item__date-month {
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 12px;
+  color: #9a8841;
+}
+
+.blog__list__item__text {
+  position: absolute;
+  left: 25px;
+  bottom: 25px;
+  z-index: 2;
+}
+
+.blog__list__item__text__category {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 23px;
+  color: #ddc051;
+  text-transform: uppercase;
+}
+
+.blog__list__item__text__headline {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  color: #ffffff;
 }
