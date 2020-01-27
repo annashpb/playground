@@ -643,6 +643,94 @@ img {
   transform: translate(-50%, -50%);
 }
 
-.gallery__list__item-hov:hover, .gallery__list__item-hov:focus {
+.gallery__list__item-hov:hover,
+.gallery__list__item-hov:focus {
   opacity: 1;
+}
+
+/* SCREEN 7 REVIEWS SECTION */
+
+.reviews {
+  background: url(../images/bg_screen7.jpg) center no-repeat;
+  background-size: cover;
+  padding: 150px 0px 200px 0px;
+}
+
+.reviews__list {
+  list-style: none;
+}
+
+.reviews__list__item {
+  display: none;
+  padding: 0px 90px 0px 100px;
+  position: relative;
+}
+
+.reviews__list__item::before {
+  content: "\201c";
+  color: #fcdb5a;
+  font-family: serif;
+  font-size: 100px;
+  font-weight: bold;
+  line-height: 1;
+  position: absolute;
+  left: 0;
+  top: -30px;
+}
+
+.review-active {
+  display: block;
+}
+
+.reviews__text {
+  font-family: serif;
+  font-style: italic;
+  font-size: 25px;
+  line-height: 30px;
+  color: #ffffff;
+  padding-bottom: 40px;
+}
+
+.reviews__footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.reviews__footer__author {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.reviews__footer__author__photo {
+  margin-right: 20px;
+}
+
+.reviews__footer__author__person {
+  font-family: "Raleway";
+  font-weight: 200;
+  font-size: 18px;
+  color: #ffffff;
+}
+
+.reviews__footer__author__person-name {
+  font-weight: 700;
+}
+
+.reviews__photo__pagination {
+  display: inline-block;
+  height: 12px;
+  width: 12px;
+  border-radius: 50%;
+  border: 3px solid #5b5b5b;
+}
+
+.pagination-active {
+  border: 3px solid #fde557;
+  background-color: #fde557;
+}
+
+.reviews__photo__pagination:not(:last-child) {
+  margin-right: 15px;
 }
