@@ -518,3 +518,61 @@ img {
   color: #ccaf8a;
   width: 470px;
 }
+
+/* SCREEN 5 PROGRESS SECTION */
+
+.progress {
+  padding: 150px 0px;
+}
+
+.progress__list {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.progress__list__item {
+  padding: 0px 100px;
+  position: relative;
+}
+
+.progress__list__item::before {
+content: '';
+position: absolute;
+left: 0;
+top: 50%;
+transform: translateY(-50%);
+width: 70px;
+height: -webkit-fill-available;
+}
+
+.progress__list__item:nth-child(1)::before {
+  background: url(../images/icons/icon_prog_muffin.png) center no-repeat;
+}
+
+.progress__list__item:nth-child(2)::before {
+  background: url(../images/icons/icon_prog_cake.png) center no-repeat;
+}
+
+.progress__list__item:nth-child(3)::before {
+  background: url(../images/icons/icon_prog_cupcake.png) center no-repeat;
+}
+
+.progress__list__item:nth-child(4)::before {
+  background: url(../images/icons/icon_prog_doughnut.png) center no-repeat;
+}
+
+.progress__list__item-number {
+  font-family: "Raleway";
+  font-weight: 900;
+  font-size: 50px;
+  line-height: 50px;
+  color: #2e211d;
+  padding-bottom: 20px;
+}
+
+.progress__list__item-name {
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1;
+}
