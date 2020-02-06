@@ -263,3 +263,52 @@ img {
   font-size: 35px;
   padding-left: 5px;
 }
+
+.advantages {
+  padding-top: 100px;
+}
+
+.advantages__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+.advantages__item {
+  width: 160px;
+  font-family: "PT Serif";
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  text-align: center;
+  padding-top: 110px;
+  position: relative;
+}
+
+.advantages__item::before {
+  content: '';
+  width: inherit;
+  height: 88px;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.advantages__item:nth-child(1)::before {
+  background: url(../img/icon-weapons.png) center no-repeat;
+}
+
+.advantages__item:nth-child(2)::before {
+  background: url(../img/icon-target.png) center no-repeat;
+}
+
+.advantages__item:nth-child(3)::before {
+  background: url(../img/icon-shield.png) center no-repeat;
+}
+
+.advantages__item:nth-child(4)::before {
+  background: url(../img/icon-draw.png) center no-repeat;
+}
