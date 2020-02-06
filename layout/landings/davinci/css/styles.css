@@ -49,6 +49,28 @@ img {
 }
 
 .section-headline {
+  font-family: "PT Serif";
+  font-weight: 700;
+  font-size: 36px;
+  text-align: center;
+  margin-bottom: 65px;
+}
+
+.section-with-finish {
+  border-bottom: 4px solid #ededed;
+  position: relative;
+}
+
+.section-with-finish::after {
+  content: "";
+  display: block;
+  width: 79px;
+  height: 74px;
+  background: url(../img/divider-icon.png) center no-repeat;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translate(-50%, 50%);
 }
 
 .site-header {
@@ -74,7 +96,6 @@ img {
   font-weight: 400;
   font-size: 18px;
   color: #000000;
-  /* text-decoration: none; */
   padding-top: 5px;
   position: relative;
 }
@@ -91,21 +112,24 @@ img {
 }
 
 .slider-section {
-  background-image: linear-gradient(to top,
-    rgba(255, 255, 255, 1), rgba(255, 255, 255, 0) 40%
-  ), url(../img/background.jpg);
+  background-image: linear-gradient(
+      to top,
+      rgba(255, 255, 255, 1),
+      rgba(255, 255, 255, 0) 40%
+    ),
+    url(../img/background.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .slider {
-  padding: 210px 0px 310px 0px;
+  padding: 210px 0px 310px;
   position: relative;
 }
 
 .slider::before {
-  content: '';
+  content: "";
   position: absolute;
   right: 0;
   top: 50%;
@@ -116,7 +140,7 @@ img {
 }
 
 .slider::after {
-  content: '';
+  content: "";
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
@@ -136,9 +160,40 @@ img {
 
 .slider__btn {
   background-color: rgba(255, 255, 255, 0.8);
-  
-    box-shadow: 0px 0px 134px 4px rgba(0, 0, 0, 0.05);
+  box-shadow: 0px 0px 134px 4px rgba(0, 0, 0, 0.05);
+}
 
-  
-  
+.about {
+  padding: 70px 0px 90px;
+}
+
+.about__headline {
+  font-family: "Engagement";
+  font-weight: 400;
+  font-size: 60px;
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.about__text {
+  font-family: "PT Serif";
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.about__text:not(:last-child) {
+  margin-bottom: 25px;
+}
+
+.about__text a {
+  color: #000000;
+}
+
+.first-letter {
+  font-family: "Engagement";
+  font-weight: 400;
+  font-size: 52px;
+  line-height: 1;
+  float: left;
+  transform: translateY(-5px);
 }
