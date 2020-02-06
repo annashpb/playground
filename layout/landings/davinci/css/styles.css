@@ -197,3 +197,69 @@ img {
   float: left;
   transform: translateY(-5px);
 }
+
+.products {
+  padding: 135px 0px;
+}
+
+.products__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.product {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+.product:nth-child(2n) {
+  flex-direction: row-reverse;
+}
+
+.product:not(:last-child) {
+  margin-bottom: 110px;
+}
+
+.product__description {
+  width: 360px;
+}
+
+.product__headline {
+  font-family: "PT Serif";
+  font-weight: 700;
+  font-size: 30px;
+  margin-bottom: 36px;
+}
+
+.product__text {
+  font-family: "PT Serif";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  margin-bottom: 60px;
+}
+
+.product__properties {
+  display: inline-block;
+  width: 178px;
+  margin-bottom: 45px;
+}
+
+
+.property__name {
+  display: inline-block;
+  width: 80px;
+  font-family: "PT Serif";
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.property__value {
+  font-family: "PT Serif";
+  font-weight: 400;
+  font-size: 35px;
+  padding-left: 5px;
+}
