@@ -212,7 +212,6 @@ img {
   display: flex;
   justify-content: space-between;
   align-items: center;
-
 }
 
 .product:nth-child(2n) {
@@ -247,7 +246,6 @@ img {
   width: 178px;
   margin-bottom: 45px;
 }
-
 
 .property__name {
   display: inline-block;
@@ -288,7 +286,7 @@ img {
 }
 
 .advantages__item::before {
-  content: '';
+  content: "";
   width: inherit;
   height: 88px;
   position: absolute;
@@ -311,4 +309,95 @@ img {
 
 .advantages__item:nth-child(4)::before {
   background: url(../img/icon-draw.png) center no-repeat;
+}
+
+.reviews {
+  padding: 95px 0px 135px;
+}
+
+.reviews__block {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+
+.reviews__photo {
+  width: 157px;
+  height: 157px;
+  border-radius: 50%;
+  margin-right: 60px;
+}
+
+.review {
+  width: 470px;
+  padding-top: 20px;
+  position: relative;
+}
+
+.review::before {
+  content: "";
+  width: 62px;
+  height: 54px;
+  background: url(../img/icon-quote.png) center no-repeat;
+  position: absolute;
+  top: 0;
+  left: -80px;
+}
+
+.review__text {
+  font-family: "PT Serif";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 30px;
+}
+
+.review__author {
+  font-family: "PT Serif";
+  font-weight: 700;
+  font-size: 18px;
+  text-align: right;
+  position: relative;
+}
+
+.review__author::before {
+  content: "";
+  width: 125px;
+  height: 2px;
+  background-color: #dddddd;
+  position: absolute;
+  top: -15px;
+  right: 0;
+}
+
+.pagination {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+justify-content: center;
+}
+
+.pagination__item:not(:last-child) {
+  margin-right: 20px;
+}
+
+.pagination__btn {
+  width: 43px;
+  height: 44px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.pagination__btn--warr {
+  background: url(../img/icon-pag-warrior.png) center no-repeat;
+}
+
+.pagination__btn--christ-active {
+  background: url(../img/icon-pag-christian.png) center no-repeat;
+}
+
+.pagination__btn--king {
+  background: url(../img/icon-pag-king.png) center no-repeat;
 }
