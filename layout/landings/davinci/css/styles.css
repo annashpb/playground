@@ -46,6 +46,13 @@ img {
   background-color: #dddddd;
   border: none;
   cursor: pointer;
+  outline: none;
+  transition: box-shadow 200ms linear;
+}
+
+.default-btn:hover,
+.default-btn:focus {
+  box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.3);
 }
 
 .section-headline {
@@ -73,14 +80,19 @@ img {
   transform: translate(-50%, 50%);
 }
 
+.header {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+}
+
 .site-header {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
   padding-top: 20px;
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
 }
 
 .logo {
@@ -375,7 +387,7 @@ img {
   padding: 0;
   margin: 0;
   display: flex;
-justify-content: center;
+  justify-content: center;
 }
 
 .pagination__item:not(:last-child) {
@@ -400,4 +412,53 @@ justify-content: center;
 
 .pagination__btn--king {
   background: url(../img/icon-pag-king.png) center no-repeat;
+}
+
+.site-footer {
+  background: url(../img/footer-bg.jpg) center no-repeat;
+  background-size: cover;
+}
+
+.footer {
+  padding: 100px 0px;
+  width: 750px;
+  margin: 0 auto;
+}
+
+.send-form__block {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 24px;
+}
+
+.send-form__input,
+.send-form__message {
+  padding: 20px;
+  font-family: "PT Serif";
+  font-weight: 400;
+  font-size: 18px;
+  border: 1px solid #dddddd;
+  outline: none;
+}
+
+.send-form__input {
+  width: 360px;
+}
+
+.send-form__message {
+  width: -webkit-fill-available;
+  height: 136px;
+  resize: none;
+  margin-bottom: 45px;
+}
+
+.send-form__input::placeholder,
+.send-form__message::placeholder {
+  color: #c3c3c3;
+}
+
+.footer__btn {
+  padding: 14px 90px;
+  display: block;
+  margin: 0 auto;
 }

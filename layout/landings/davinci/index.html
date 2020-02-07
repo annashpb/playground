@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <header>
+    <header class="header">
       <div class="site-header container">
         <a href="#" class="logo">Leonardo Da Vinci</a>
         <a href="#send-form" class="send-message">Send pigeon</a>
@@ -150,49 +150,53 @@
           </ul>
         </div>
       </section>
-      <section class="reviews section-with-finish">
-        <h2 class="reviews__headline section-headline">Clients Testimonials</h2>
-        <div class="reviews__block">
-          <img
-            src="./img/user-avatar.png"
-            alt="User photo"
-            class="reviews__photo"
-            width="157"
-            height="157"
-          />
-          <div class="reviews__item review">
-            <p class="review__text">
-              The weapons of Leonardo proved to be excellent against the
-              Venetian league in the battle of Fornovo. We used catapults in
-              defense of heights, which allowed us to easily drop the enemy.
-            </p>
-            <p class="review__author">Alexander VI</p>
+      <section class="reviews-section section-with-finish">
+        <div class="container reviews">
+          <h2 class="reviews__headline section-headline">
+            Clients Testimonials
+          </h2>
+          <div class="reviews__block">
+            <img
+              src="./img/user-avatar.png"
+              alt="User photo"
+              class="reviews__photo"
+              width="157"
+              height="157"
+            />
+            <div class="reviews__item review">
+              <p class="review__text">
+                The weapons of Leonardo proved to be excellent against the
+                Venetian league in the battle of Fornovo. We used catapults in
+                defense of heights, which allowed us to easily drop the enemy.
+              </p>
+              <p class="review__author">Alexander VI</p>
+            </div>
           </div>
+          <ul class="pagination">
+            <li class="pagination__item">
+              <button
+                type="button"
+                class="pagination__btn pagination__btn--warr"
+              ></button>
+            </li>
+            <li class="pagination__item">
+              <button
+                type="button"
+                class="pagination__btn pagination__btn--christ-active"
+              ></button>
+            </li>
+            <li class="pagination__item">
+              <button
+                type="button"
+                class="pagination__btn pagination__btn--king"
+              ></button>
+            </li>
+          </ul>
         </div>
-        <ul class="pagination">
-          <li class="pagination__item">
-            <button
-              type="button"
-              class="pagination__btn pagination__btn--warr"
-            ></button>
-          </li>
-          <li class="pagination__item">
-            <button
-              type="button"
-              class="pagination__btn pagination__btn--christ-active"
-            ></button>
-          </li>
-          <li class="pagination__item">
-            <button
-              type="button"
-              class="pagination__btn pagination__btn--king"
-            ></button>
-          </li>
-        </ul>
       </section>
     </main>
     <footer class="site-footer">
-      <div class="container">
+      <div class="footer">
         <form action="#" method="GET" id="send-form">
           <h2 class="footer__headline section-headline">Send Pigeon</h2>
           <div class="send-form__block">
@@ -215,7 +219,7 @@
             placeholder="Your message"
             class="send-form__message"
           ></textarea>
-          <button type="submit">Send</button>
+          <button type="submit" class="footer__btn default-btn">Send</button>
         </form>
       </div>
     </footer>
