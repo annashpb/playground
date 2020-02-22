@@ -10,4 +10,4 @@ require 'routs.php';
 
 // var_dump($uri);
 
-require $router->direct(Request::uri());
+require $router->direct(Request::uri(), Request::method());

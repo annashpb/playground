@@ -2,16 +2,31 @@
 
 class Router
 {
-    protected $routs = [];
-    public function define($routs)
+    protected $routs = [
+        'GET' => [],
+        'POST' => []
+    ];
+
+    // public function define($routs)
+    // {
+    //     $this->routs = $routs;
+    // }
+
+    public function direct($uri, $requestType)
     {
-        $this->routs = $routs;
-    }
-    public function direct($uri)
-    {
-        if (array_key_exists($uri, $this->routs)) {
-            return $this->routs[$uri];
+        if (array_key_exists($uri, $this->routs[$requestType])) {
+            return $this->routs[$requestType][$uri];
         }
         throw new Exception('No rout defined for this URI');
+    }
+
+    public function get($uri, $controller)
+    {
+        $this->routs['GET'][$uri] = $controller;
+    }
+
+    public function post($uri, $controller)
+    {
+        $this->routs['POST'][$uri] = $controller;
     }
 }

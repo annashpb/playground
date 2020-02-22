@@ -2,6 +2,11 @@
 
 <h1>My tasks</h1>
 
+<form method="POST" action="/names">
+    <input type="text" name="name" placeholder="Please enter your name">
+    <button type="submit">Submit</button>
+</form>
+
 <ul>
     <?php foreach ($tasks as $task) : ?>
         <li>
