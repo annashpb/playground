@@ -1,5 +1,7 @@
 <?php
 
+namespace App\Core;
+
 class Router
 {
     protected $routs = [
@@ -15,7 +17,7 @@ class Router
     public function direct($uri, $requestType)
     {
         if (array_key_exists($uri, $this->routs[$requestType])) {
-            return $this->routs[$requestType][$uri];
+            return $this->callAction(...explode('@', $this->routs[$requestType][$uri]));
         }
         throw new Exception('No rout defined for this URI');
     }
@@ -28,5 +30,15 @@ class Router
     public function post($uri, $controller)
     {
         $this->routs['POST'][$uri] = $controller;
+    }
+
+    protected function callAction($controller, $action)
+    {        
+        $controller = "App\Controllers\\{$controller}";
+        $controller = new $controller;
+        if (!method_exists($controller, $action)) {
+            throw new Exception("$controller does not respond to $action action");
+        }
+        return $controller->$action();
     }
 }

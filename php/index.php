@@ -3,11 +3,10 @@
 
 $query = require 'core/bootstrap.php';
 
+use App\Core\{Router, Request};
+
 $router = new Router;
 
 require 'routs.php';
 
-
-// var_dump($uri);
-
-require $router->direct(Request::uri(), Request::method());
+ $router->direct(Request::uri(), Request::method());
