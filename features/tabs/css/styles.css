@@ -1,0 +1,30 @@
+.tabs__control {
+  padding: 10px 20px;
+  background-color: #daad89;
+  color: #ffffff;
+  font-family: sans-serif;
+  text-decoration: none;
+  border-top-left-radius: 15px;
+  display: inline-block;
+}
+
+.tabs__control_active {
+  background-color: #955f32;
+}
+
+.tabs__control:hover {
+  background-color: #b47f53;
+  outline: none;
+}
+
+.tabs__panel {
+  display: none;
+  padding: 15px;
+  background-color: #955f32;
+  color: #ffffff;
+  font-size: 18px;
+}
+
+.tabs__panel_active {
+  display: block;
+}
