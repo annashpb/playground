@@ -18,6 +18,7 @@ menus.map((menu) => {
     if (active) {
       button.classList.add("circular-menu__btn_active");
       for (let i = 0; i < length; i += 1) {
+        items[i].style.opacity = 1;
         const angle = i * arc; //угол элемента - номер элемента, умноженный на расстояние между элементами
         //   координаты элемента:
         const x = radius * Math.cos(angle);

@@ -28,6 +28,7 @@ body {
   font-family: sans-serif;
   transition: all 300ms linear;
   outline: none;
+  opacity: 0;
 }
 
 .circular-menu__btn {
