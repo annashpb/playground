@@ -1,0 +1,122 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Bangers", cursive;
+}
+
+section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  color: #008080;
+  font-size: 72px;
+}
+
+.burger-menu__btn {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  z-index: 30;
+  width: 50px;
+  height: 50px;
+  border: none;
+  border-radius: 50%;
+  background-color: #008080;
+  transition: all 200ms linear;
+}
+
+.burger-menu__btn:hover,
+.burger-menu__btn:focus {
+  box-shadow: 2px 2px 10px rgba(0, 128, 128, 0.6);
+  filter: brightness(1.2);
+}
+
+.burger-menu__lines,
+.burger-menu__lines::before,
+.burger-menu__lines::after {
+  position: absolute;
+  width: 20px;
+  height: 3px;
+  background-color: #ffffff;
+  transition: all 200ms linear;
+}
+
+.burger-menu__lines {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.burger-menu__lines::before {
+  content: "";
+  top: -6px;
+}
+
+.burger-menu__lines::after {
+  content: "";
+  bottom: -6px;
+}
+
+.burger-menu_active .burger-menu__lines {
+  background-color: transparent;
+}
+
+.burger-menu_active .burger-menu__lines::before {
+  top: 0;
+  transform: rotate(45deg);
+}
+
+.burger-menu_active .burger-menu__lines::after {
+  top: 0;
+  transform: rotate(-45deg);
+}
+
+.burger-menu__nav {
+  padding-top: 70px;
+  position: fixed;
+  left: -100%;
+  z-index: 20;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  min-width: 30%;
+  background-color: #008080;
+  /* возможность прокрутки по вертикали: */
+  overflow-y: auto;
+  transition: all 200ms linear;
+}
+
+.burger-menu_active .burger-menu__nav {
+  left: 0;
+}
+
+.burger-menu__link {
+  font-family: "Raleway", sans-serif;
+  font-weight: 200;
+  font-size: 18px;
+  color: #ffffff;
+  padding: 20px 30px;
+  text-decoration: none;
+  transition: all 200ms linear;
+}
+
+.burger-menu__link:hover,
+.burger-menu__link:focus {
+  font-weight: 500;
+  outline: none;
+}
+
+.burger-menu__overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 10;
+}
+
+.burger-menu_active .burger-menu__overlay {
+  display: block;
+}
