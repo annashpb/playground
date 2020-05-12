@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inclusive components</title>
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Archivo+Narrow:wght@700&family=Josefin+Sans:wght@200;300;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="site-headline">My favourite TV swows</h1>
+      <ul class="cards-list">
+        <li class="card">
+          <div class="card__text">
+            <h2 class="card__title">
+              <a href="https://www.imdb.com/title/tt1869454/">Good Omens</a>
+            </h2>
+            <p class="card__descr">
+              Angel and demon trying hard to stop apocalypse
+            </p>
+            <span class="cta" aria-hidden="true">Read more</span>
+            <div class="card__bottom">
+              <p class="card__bottom--year">2019</p>
+              <a
+                href="https://www.youtube.com/watch?v=ERM-OjqVpv0"
+                class="card__bottom--trailer"
+                >Trailer</a
+              >
+            </div>
+          </div>
+          <div class="card__image">
+            <img src="./img/good_omens.jpg" alt="" />
+          </div>
+        </li>
+      </ul>
+    </div>
+
+    <script src="./js/app.js" type="module"></script>
+  </body>
+</html>
