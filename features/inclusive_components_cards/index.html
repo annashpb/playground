@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Inclusive components</title>
-    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/normalize.css" />
     <link rel="stylesheet" href="./css/styles.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Archivo+Narrow:wght@700&family=Josefin+Sans:wght@200;300;700&display=swap"
@@ -15,26 +15,154 @@
     <div class="container">
       <h1 class="site-headline">My favourite TV swows</h1>
       <ul class="cards-list">
-        <li class="card">
+        <li class="card card-js">
           <div class="card__text">
             <h2 class="card__title">
-              <a href="https://www.imdb.com/title/tt1869454/">Good Omens</a>
+              <a
+                href="https://www.imdb.com/title/tt1869454/"
+                target="_blank"
+                aria-describedby="good_omens"
+                >Good Omens</a
+              >
             </h2>
             <p class="card__descr">
               Angel and demon trying hard to stop apocalypse
             </p>
-            <span class="cta" aria-hidden="true">Read more</span>
+            <span class="cta" aria-hidden="true" id="good_omens"
+              >Read more</span
+            >
             <div class="card__bottom">
               <p class="card__bottom--year">2019</p>
               <a
                 href="https://www.youtube.com/watch?v=ERM-OjqVpv0"
                 class="card__bottom--trailer"
+                target="_blank"
                 >Trailer</a
               >
             </div>
           </div>
           <div class="card__image">
-            <img src="./img/good_omens.jpg" alt="" />
+            <img src="./img/good_omens.jpg" alt="Good Omens poster" />
+          </div>
+        </li>
+        <li class="card card-js">
+          <div class="card__text">
+            <h2 class="card__title">
+              <a
+                href="https://www.imdb.com/title/tt2261227/"
+                target="_blank"
+                aria-describedby="altered_carbon"
+                >Altered Carbon</a
+              >
+            </h2>
+            <p class="card__descr">
+              Investigation of a murder in a world with no actual human death
+            </p>
+            <span class="cta" aria-hidden="true" id="altered_carbon"
+              >Read more</span
+            >
+            <div class="card__bottom">
+              <p class="card__bottom--year">2018</p>
+              <a
+                href="https://www.youtube.com/watch?v=DpyNN3WJEFY"
+                class="card__bottom--trailer"
+                target="_blank"
+                >Trailer</a
+              >
+            </div>
+          </div>
+          <div class="card__image">
+            <img src="./img/AlteredCarbon.jpg" alt="Altered Carbon poster" />
+          </div>
+        </li>
+        <li class="card card-js">
+          <div class="card__text">
+            <h2 class="card__title">
+              <a
+                href="https://www.imdb.com/title/tt4574334/"
+                target="_blank"
+                aria-describedby="stranger_things"
+                >Stranger Things</a
+              >
+            </h2>
+            <p class="card__descr">
+              Geeky kids fight monsters from the dark dimention
+            </p>
+            <span class="cta" aria-hidden="true" id="stranger_things"
+              >Read more</span
+            >
+            <div class="card__bottom">
+              <p class="card__bottom--year">2016</p>
+              <a
+                href="https://www.youtube.com/watch?v=BKLI6zAuhiA"
+                class="card__bottom--trailer"
+                target="_blank"
+                >Trailer</a
+              >
+            </div>
+          </div>
+          <div class="card__image">
+            <img src="./img/Stranger_Things.jpg" alt="Stranger Things poster" />
+          </div>
+        </li>
+        <li class="card card-js">
+          <div class="card__text">
+            <h2 class="card__title">
+              <a
+                href="https://www.imdb.com/title/tt5691552/"
+                target="_blank"
+                aria-describedby="the_orville"
+                >The Orville</a
+              >
+            </h2>
+            <p class="card__descr">
+              An exploratory ship from Earth faces intergalactic challenges 400 years in the future
+            </p>
+            <span class="cta" aria-hidden="true" id="the_orville"
+              >Read more</span
+            >
+            <div class="card__bottom">
+              <p class="card__bottom--year">2017</p>
+              <a
+                href="https://www.youtube.com/watch?v=Ej24W8gcmXQ"
+                class="card__bottom--trailer"
+                target="_blank"
+                >Trailer</a
+              >
+            </div>
+          </div>
+          <div class="card__image">
+            <img src="./img/the_orville.jpg" alt="The Orville poster" />
+          </div>
+        </li>
+        <li class="card card-js">
+          <div class="card__text">
+            <h2 class="card__title">
+              <a
+                href="https://www.imdb.com/title/tt1190634/"
+                target="_blank"
+                aria-describedby="the_boys"
+                >The Boys</a
+              >
+            </h2>
+            <p class="card__descr">
+              A group of vigilantes (trying hard to) kick the mayhem superheroes asses
+            </p>
+            <span class="cta" aria-hidden="true" id="the_boys"
+              >Read more</span
+            >
+            <div class="card__bottom">
+              <p class="card__bottom--year">2017</p>
+              <a
+                href="https://www.youtube.com/watch?v=06rueu_fh30"
+                class="card__bottom--trailer"
+                target="_blank"
+                >Trailer</a
+              >
+            </div>
+          </div>
+          <div class="card__image">
+            <img src="./img/The_Boys_i00.jpg" alt="The Boys poster" />
           </div>
         </li>
       </ul>
