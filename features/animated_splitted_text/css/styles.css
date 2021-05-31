@@ -1,0 +1,113 @@
+:root {
+	box-sizing: border-box;
+	font-family: 'Quicksand', sans-serif;
+	font-weight: 300;
+	font-size: 20px;
+}
+
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: inherit;
+}
+
+.box {
+	width: 90vw;
+	height: 90vh;
+	margin: 5vh auto;
+	padding: 3rem;
+	box-shadow: 3px 3px 30px rgba(0, 0, 0, 0.3);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+[letter-animation] > span,
+[word-animation] > span {
+	display: inline-block;
+	white-space: break-spaces;
+	font-size: 3rem;
+	text-transform: uppercase;
+	transition: all 0.2s linear;
+}
+
+[letter-animation] > span {
+	margin: 0.2rem;
+}
+
+[word-animation] > span {
+	margin: 0.2rem 0.5rem;
+}
+
+[letter-animation='hover']:hover > span,
+[letter-animation='hover']:focus > span {
+	transform: scale(0.75);
+}
+
+[letter-animation='hover'] > span {
+	color: #00a5a5;
+	transition: transform 0.3s ease;
+	cursor: pointer;
+}
+
+[letter-animation='hover'] > span:hover,
+[letter-animation='hover'] > span:focus {
+	transform: scale(1.25);
+}
+
+@keyframes breath {
+	from {
+		animation-timing-function: ease-out;
+	}
+	to {
+		transform: translateY(-5px) scale(1.25);
+		text-shadow: 0 0 25px rgba(90, 7, 158, 0.7);
+		animation-timing-function: ease-in-out;
+	}
+}
+
+[letter-animation='breath'] > span {
+	color: #5a079e;
+	animation: breath 1200ms ease calc(var(--index) * 100 * 2ms) infinite
+		alternate;
+}
+
+[word-animation='hiding'] {
+	overflow: hidden;
+	overflow: clip;
+}
+
+[word-animation='hiding'] > span {
+	color: #d45ad8;
+	transition: transform 0.3s ease;
+	cursor: pointer;
+}
+
+[word-animation='hiding'] > span:not(:hover) {
+	transform: translateY(50%);
+}
+
+[word-animation="trampoline"] > span {
+	margin: 0.5rem;
+	color: #a50500;
+	display: inline-block;
+	transform: translateY(100%);
+	animation:
+	  trampoline 3s ease
+	  calc(var(--index) * 150 * 1ms)
+	  infinite alternate;
+  }
+  
+  @keyframes trampoline {
+	0% {
+	  transform: translateY(100%);
+	  animation-timing-function: ease-out;
+	}
+	50% {
+	  transform: translateY(0);
+	  animation-timing-function: ease-in;
+	}
+  }
