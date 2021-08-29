@@ -1,0 +1,117 @@
+/* glory-300 - latin */
+
+@font-face {
+	font-family: 'Glory';
+	font-style: normal;
+	font-weight: 300;
+	src: local(''), url('./assets/fonts/glory-v2-latin-300.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+	url('./assets/fonts/glory-v2-latin-300.woff') format('woff');
+	/* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* glory-800 - latin */
+
+@font-face {
+	font-family: 'Glory';
+	font-style: normal;
+	font-weight: 800;
+	src: local(''), url('./assets/fonts/glory-v2-latin-800.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+	url('./assets/fonts/glory-v2-latin-800.woff') format('woff');
+	/* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: "Glory", Arial, sans-serif;
+	font-weight: 300;
+	line-height: 1.4;
+	background: #fff;
+	color: #444;
+}
+
+h1 {
+	margin-bottom: 1rem;
+	font-size: 1.5rem;
+	font-weight: 800;
+	text-transform: uppercase;
+}
+
+.container {
+	max-width: 600px;
+	margin: 6rem auto 4rem;
+	padding: 0 10px;
+}
+
+.accordion {
+	list-style: none;
+}
+
+.accordion_item {
+	margin-bottom: 0.5rem;
+	box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.question {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+	border: none;
+	padding: 1rem;
+	font-weight: 800;
+	background-color: #6bffdf;
+	transition: all ease-in 0.2s;
+	cursor: pointer;
+}
+
+.question:hover, .question:focus {
+	background-color: #47e0bf;
+}
+
+.question:focus {
+	outline: none;
+}
+
+.question_control {
+	display: block;
+	height: 9px;
+	width: 9px;
+	position: relative;
+}
+
+.question_control.active {
+	transform: rotate( 45deg);
+}
+
+.question_control::before, .question_control::after {
+	content: '';
+	display: block;
+	background-color: #000;
+	position: absolute;
+}
+
+.question_control::before {
+	width: 9px;
+	height: 1px;
+	top: 4px;
+}
+
+.question_control::after {
+	width: 1px;
+	height: 9px;
+	left: 4px;
+}
+
+.answer_wrapper {
+	overflow: hidden;
+	transition: height ease-in 0.2s;
+}
+
+.answer {
+	padding: 1rem;
+}
