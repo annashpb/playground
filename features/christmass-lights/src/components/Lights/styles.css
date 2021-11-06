@@ -1,0 +1,32 @@
+.lightens {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	height: 30vh;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.buttonsWrapper {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.switchBtn {
+	border: 1px solid #fff;
+	padding: 8px 16px;
+	background: transparent;
+	font-family: 'Nanum Brush Script', cursive;
+	font-size: 30px;
+	color: #fff;
+	box-shadow: 0 0 5px rgba(255,255,255, 0.7);
+	transition: all 0.2s ease-in-out;
+	cursor: pointer;
+}
+
+.switchBtn:hover,
+.switchBtn:focus {
+	box-shadow: 0 0 15px rgba(255,255,255, 0.7);
+}
