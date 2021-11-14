@@ -1,3 +1,11 @@
+.lightWrapper {
+	height: 80px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+}
+
 .light {
 	display: block;
 	width: 15px;
@@ -6,8 +14,16 @@
 }
 
 @media screen and (min-width: 576px) {
+	.lightWrapper {
+		height: 110px;
+	}
+
 	.light {
 		width: 30px;
 		height: 60px;
 	}
+}
+
+input[type="color"] {
+	cursor: pointer;
 }

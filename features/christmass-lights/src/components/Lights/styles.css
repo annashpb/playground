@@ -12,6 +12,9 @@
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	font-size: 30px;
+	color: #fff;
+	line-height: 1.5;
 }
 
 .switchBtn {
@@ -21,12 +24,64 @@
 	font-family: 'Nanum Brush Script', cursive;
 	font-size: 30px;
 	color: #fff;
-	box-shadow: 0 0 5px rgba(255,255,255, 0.7);
+	box-shadow: 0 0 5px rgba(255, 255, 255, 0.7);
 	transition: all 0.2s ease-in-out;
 	cursor: pointer;
 }
 
-.switchBtn:hover,
-.switchBtn:focus {
-	box-shadow: 0 0 15px rgba(255,255,255, 0.7);
+.switchBtn:hover, .switchBtn:focus {
+	box-shadow: 0 0 15px rgba(255, 255, 255, 0.7);
+}
+
+.interval {
+	padding: 1.5rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.intervalInput {
+	width: auto;
+	padding: 1rem;
+	border: 1px solid #fff;
+	background-color: #000;
+	font-family: inherit;
+	font-size: 26px;
+	color: #fff;
+	transition: all 0.2s ease-in-out;
+}
+
+.intervalInput:hover, .intervalInput:focus {
+	box-shadow: 0 0 15px rgba(255, 255, 255, 0.7);
+}
+
+input[type='range'] {
+	height: 0.25rem;
+	margin: 1rem;
+	background-color: #13bba4;
+	-webkit-appearance: none;
+}
+
+input[type='range']::-webkit-slider-thumb {
+	width: 16px;
+	height: 16px;
+	border-radius: 50%;
+	background-color: #13bba4;
+	-webkit-appearance: none;
+}
+
+input[type="range"]::-moz-range-progress {
+	background-color: #13bba4;
+}
+
+input[type="range"]::-moz-range-track {
+	background-color: #13bba4;
+}
+
+input[type="range"]::-ms-fill-lower {
+	background-color: #13bba4;
+}
+
+input[type="range"]::-ms-fill-upper {
+	background-color: #13bba4;
 }

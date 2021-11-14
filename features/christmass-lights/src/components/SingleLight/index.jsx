@@ -1,19 +1,31 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './styles.css';
 
-const SingleLight = ({ color, index, lightsOn }) => {
-	const opacity = lightsOn ? '1' : '0.2';
+const SingleLight = ({ initialColor, opacity }) => {
+	const [color, setColor] = useState(initialColor);
+
+	const changeColor = e => {
+		setColor(e.target.value);
+	};
 
 	return (
 		<li
-			key={index}
-			className="light"
-			style={{
-				background: color,
-				boxShadow: `0 2px 10px ${color}`,
-				opacity
-			}}
-		/>
+			className="lightWrapper"
+			style={{ opacity }}
+		>
+			<span
+				className="light"
+				style={{
+					background: color,
+					boxShadow: `0 2px 10px ${color}`,
+				}}
+			/>
+			<input
+				type="color"
+				value={color}
+				onChange={changeColor}
+			/>
+		</li>
 	)
 };
 
