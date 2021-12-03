@@ -1,24 +1,24 @@
 .appWrapper {
-  width: 100vw;
-  height: 100vh;
-  background: linear-gradient(to bottom, #000, rgb(9, 43, 0));
+	width: 100vw;
+	height: 100vh;
+	background: linear-gradient(to bottom, #000, rgb(9, 43, 0));
 }
 
 .headingContainer {
-  height: 20vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+	height: 20vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
 .heading {
-  text-align: center;
-  font-size: 40px;
-  color: #fff;
+	text-align: center;
+	font-size: 40px;
+	color: #fff;
 }
 
 @media screen and (min-width: 576px) {
-  .heading {
-    font-size: 70px;
-  }
+	.heading {
+		font-size: 70px;
+	}
 }
